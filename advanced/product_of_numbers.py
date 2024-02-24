@@ -25,7 +25,7 @@ import pytest
 
 
 def product_of_numbers(lst: list, number: int) -> str:
-    return "ДА" if any([(number / lst[x]) in lst[x + 1:] for x in range(len(lst) - 1) if lst[x] != 0]) else "НЕТ"
+    return "ДА" if any([(number / lst[x]) in lst[x + 1 :] for x in range(len(lst) - 1) if lst[x] != 0]) else "НЕТ"
 
 
 @pytest.mark.parametrize(
