@@ -28,7 +28,7 @@ max-line-length = 120
 extend-ignore = "W291 E128 E122"
 
 [tool.pytest.ini_options]
-addopts = "-sv -p no:cacheprovider --cov=. --cov-report html"
+addopts = "-sv -p no:cacheprovider"
 testpaths = ["tests"]
 
 [tool.isort]
