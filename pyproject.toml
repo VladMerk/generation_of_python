@@ -19,3 +19,18 @@ flake8-pyproject = "^1.2.3"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.flake8]
+max-line-length = 120
+extend-ignore = "W291 E128 E122"
+
+[tool.pytest.ini_options]
+addopts = "-sv -p no:cacheprovider --cov=. --cov-report html"
+testpaths = ["tests"]
+
+[tool.isort]
+line_length = 120
+multi_line_output = 3
