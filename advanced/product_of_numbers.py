@@ -1,9 +1,6 @@
 """
-<<<<<<< HEAD
-Произведение чисел.
-=======
 Произведение чисел
->>>>>>> origin/master
+
 Напишите программу для определения, является ли число произведением двух чисел из данного набора.
 Программа должна выводить результат в виде ответа «ДА» или «НЕТ».
 
@@ -25,7 +22,7 @@ import pytest
 
 
 def product_of_numbers(lst: list, number: int) -> str:
-    return "ДА" if any([(number / lst[x]) in lst[x + 1:] for x in range(len(lst) - 1) if lst[x] != 0]) else "НЕТ"
+    return "ДА" if any([(number / lst[x]) in lst[x + 1 :] for x in range(len(lst) - 1) if lst[x] != 0]) else "НЕТ"
 
 
 @pytest.mark.parametrize(
