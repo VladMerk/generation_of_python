@@ -22,9 +22,6 @@ def get_flaviy(n: int, k: int) -> int:
     return count+1
 
 
-get_flaviy(2, 1)
-
-
 @pytest.mark.parametrize(
     "n, k, expected",
     [
